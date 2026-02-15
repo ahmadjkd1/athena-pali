@@ -59,6 +59,21 @@ h1, h2, h3, h4 {
 .nav-brand .logo {
     height: 60px;
     width: auto;
+    display: block;
+}
+
+.nav-brand .logo-fallback h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.nav-brand .logo-fallback .tagline {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin: 0;
 }
 
 .nav-brand h1 {

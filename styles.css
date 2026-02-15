@@ -460,6 +460,86 @@ section {
     color: var(--text-light);
 }
 
+/* Connectivity */
+.connectivity {
+    background: var(--white);
+}
+
+.connectivity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.connectivity-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--light-color);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.connectivity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.connectivity-card.major {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+}
+
+.connectivity-card.major h4,
+.connectivity-card.major .distance {
+    color: var(--white);
+}
+
+.connectivity-card.highlight {
+    border: 2px solid var(--accent-color);
+    background: var(--white);
+}
+
+.connectivity-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.connectivity-card h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connectivity-card.major h4 {
+    color: var(--white);
+}
+
+.connectivity-card .distance {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.connectivity-card.major .distance {
+    color: var(--accent-color);
+}
+
+.connectivity-card .desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.connectivity-card.major .desc {
+    color: rgba(255,255,255,0.9);
+}
+
 /* Timeline */
 .timeline {
     background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
@@ -756,6 +836,7 @@ section {
     .feature-grid,
     .investment-grid,
     .infra-grid,
+    .connectivity-grid,
     .timeline-container,
     .amenities-grid,
     .developer-stats,
@@ -782,6 +863,7 @@ section {
     .feature-grid,
     .investment-grid,
     .infra-grid,
+    .connectivity-grid,
     .timeline-container,
     .amenities-grid,
     .developer-stats,

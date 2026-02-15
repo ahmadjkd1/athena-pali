@@ -112,7 +112,8 @@ h1, h2, h3, h4 {
 .hero {
     position: relative;
     height: 100vh;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(rgba(44, 95, 45, 0.7), rgba(44, 95, 45, 0.8)), 
+                url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,13 +286,9 @@ section {
 
 .image-placeholder {
     height: 500px;
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=1000&fit=crop') center/cover;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 1.2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
 }
 
 /* Investment Section */
@@ -509,25 +506,46 @@ section {
 
 .amenity-card {
     text-align: center;
-    padding: 35px 20px;
-    background: var(--light-color);
+    background: var(--white);
     border-radius: 10px;
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
 }
 
 .amenity-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.amenity-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
+.amenity-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.amenity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.amenity-card:hover .amenity-image img {
+    transform: scale(1.1);
 }
 
 .amenity-card h4 {
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    padding: 0 15px;
+}
+
+.amenity-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    padding: 0 15px 20px;
 }
 
 /* Developer */

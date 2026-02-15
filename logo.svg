@@ -1,0 +1,25 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Villa/House Icon -->
+  <g transform="translate(10, 20)">
+    <!-- Roof -->
+    <path d="M 20 15 L 35 5 L 50 15 Z" fill="#2c5f2d" stroke="#97bc62" stroke-width="1.5"/>
+    <!-- House Body -->
+    <rect x="22" y="15" width="26" height="20" fill="#2c5f2d" stroke="#97bc62" stroke-width="1"/>
+    <!-- Door -->
+    <rect x="30" y="23" width="10" height="12" fill="#97bc62"/>
+    <!-- Windows -->
+    <rect x="24" y="18" width="5" height="4" fill="#d4af37"/>
+    <rect x="41" y="18" width="5" height="4" fill="#d4af37"/>
+    <!-- Garden/Ground -->
+    <ellipse cx="35" cy="37" rx="18" ry="3" fill="#97bc62" opacity="0.5"/>
+  </g>
+  
+  <!-- Text: ATHENA -->
+  <text x="75" y="35" font-family="'Playfair Display', serif" font-size="24" font-weight="700" fill="#2c5f2d" letter-spacing="2">ATHENA</text>
+  
+  <!-- Text: PALI -->
+  <text x="75" y="55" font-family="'Playfair Display', serif" font-size="16" font-weight="400" fill="#97bc62" letter-spacing="3">PALI</text>
+  
+  <!-- Tagline -->
+  <text x="75" y="68" font-family="'Inter', sans-serif" font-size="9" font-style="italic" fill="#666" letter-spacing="1">Greenery & Landscape Living</text>
+</svg>

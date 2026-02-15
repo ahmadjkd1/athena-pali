@@ -343,6 +343,63 @@ section {
     font-size: 0.95rem;
 }
 
+/* Infrastructure Details */
+.infrastructure-details {
+    margin: 60px 0;
+    padding: 50px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+}
+
+.infrastructure-details h3 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infra-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.infra-detail-card {
+    padding: 30px;
+    background: var(--light-color);
+    border-radius: 10px;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.infra-detail-card h4 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.infra-detail-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infra-detail-card ul li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.infra-detail-card ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /* Developer Info */
 .developer-info {
     margin-top: 60px;
@@ -956,6 +1013,7 @@ section {
     }
     
     .highlights-grid,
+    .infra-details-grid,
     .developer-track-record,
     .investment-stats,
     .feature-grid,
@@ -985,6 +1043,7 @@ section {
     }
     
     .highlights-grid,
+    .infra-details-grid,
     .developer-track-record,
     .investment-stats,
     .feature-grid,

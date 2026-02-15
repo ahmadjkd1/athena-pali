@@ -1,11 +1,11 @@
 # Athena Pali - Premium Villa Plots Website
 
-A professional marketing website for PP Properties' Athena Pali project - 64 acres of premium residential villa plots in Khopoli, Maharashtra.
+A professional marketing website for PP Properties' Athena Pali project - 64 acres of premium residential villa plots in Pali, Maharashtra.
 
 ## Project Overview
 
 **Athena Pali** - Greenery & Landscape Living
-- Location: Khopoli, Maharashtra
+- Location: Pali, Maharashtra
 - Size: 64 Acres
 - Type: Residential Villa Plots
 - Open Space: 40%
@@ -42,7 +42,7 @@ athena-pali/
 
 1. **Hero** - Eye-catching introduction with key highlights
 2. **About** - Project overview and features
-3. **Investment** - Khopoli as top investment location (Colliers data)
+3. **Investment** - Pali as top investment location (Colliers data)
 4. **Location** - NMIA, NAINA, and infrastructure details
 5. **Infrastructure** - MMR connectivity projects
 6. **Timeline** - Growth trajectory to 2030

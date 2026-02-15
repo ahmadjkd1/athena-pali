@@ -766,6 +766,61 @@ section {
     line-height: 1.6;
 }
 
+/* Attractions */
+.attractions {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.attraction-card {
+    text-align: center;
+    padding: 35px 25px;
+    background: var(--light-color);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.attraction-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    border-color: var(--secondary-color);
+}
+
+.attraction-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.attraction-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attraction-card .distance {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.attraction-card .desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
 /* Map Section */
 .map-section {
     background: var(--light-color);
@@ -1077,6 +1132,7 @@ section {
     .investment-grid,
     .infra-grid,
     .connectivity-grid,
+    .attractions-grid,
     .timeline-container,
     .amenities-grid,
     .developer-stats,
@@ -1107,6 +1163,7 @@ section {
     .investment-grid,
     .infra-grid,
     .connectivity-grid,
+    .attractions-grid,
     .timeline-container,
     .amenities-grid,
     .developer-stats,

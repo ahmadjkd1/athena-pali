@@ -684,6 +684,22 @@ section {
     line-height: 1.6;
 }
 
+/* Map Section */
+.map-section {
+    background: var(--light-color);
+    padding: 80px 0;
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+    display: block;
+}
+
 /* Amenities */
 .amenities-grid {
     display: grid;

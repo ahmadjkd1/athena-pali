@@ -99,7 +99,7 @@ athena-pali/
 ## Contact
 
 For inquiries about Athena Pali:
-- Phone: +91 98765 43210
+- Phone: +91 90000 00000
 - Email: info@athenapali.com
 
 ---

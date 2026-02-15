@@ -1,0 +1,42 @@
+ATHENA 3.0 - GODADDY DEPLOYMENT QUICK START
+===========================================
+
+FILES TO UPLOAD (5 files):
+✓ index.html
+✓ styles.css
+✓ script.js
+✓ logo.svg
+✓ favicon.svg
+
+QUICK STEPS:
+1. Login to GoDaddy.com
+2. Go to "My Products" → Your Hosting → "Manage"
+3. Open "File Manager" in cPanel
+4. Navigate to "public_html" folder
+5. Delete any existing index.html
+6. Click "Upload" and select all 5 files above
+7. Wait for upload to complete
+8. Visit your domain - Your site is LIVE!
+
+IMPORTANT NOTES:
+- Upload to public_html folder (NOT any subfolder)
+- Set file permissions to 644 if asked
+- Wait 5-10 minutes for changes to appear
+- Clear browser cache (Ctrl+F5) to see updates
+
+YOUR WEBSITE FEATURES:
+✓ Responsive design (mobile, tablet, desktop)
+✓ Custom ATHENA 3.0 logo
+✓ 50+ World-Class Amenities section
+✓ Prime Connectivity details
+✓ Nearby Attractions
+✓ Google Maps integration
+✓ Contact form
+✓ Investment information
+✓ Developer portfolio
+
+SUPPORT:
+GoDaddy Support: 1-480-505-8877 (24/7)
+Live Chat: Available in your GoDaddy account
+
+Need help? Check DEPLOYMENT_GUIDE.md for detailed instructions.

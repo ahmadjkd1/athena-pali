@@ -287,7 +287,7 @@ section {
 
 .image-placeholder {
     height: 500px;
-    background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=1000&fit=crop') center/cover;
+    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=1000&fit=crop') center/cover;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
 }

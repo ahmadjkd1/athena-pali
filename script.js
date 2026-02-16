@@ -69,12 +69,17 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections and cards
-document.querySelectorAll('section, .stat-card, .feature-box, .investment-card, .amenity-card, .project-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+// Wait for page to load before applying animations
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        // Observe all sections and cards
+        document.querySelectorAll('section, .stat-card, .feature-box, .investment-card, .amenity-card, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    }, 500);
 });
 
 // Form submission handler

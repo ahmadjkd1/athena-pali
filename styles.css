@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 :root {
     --primary-color: #2c5f2d;
     --secondary-color: #97bc62;
@@ -21,6 +27,19 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Improve image loading */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Smooth transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4 {
@@ -1116,7 +1135,12 @@ section {
     }
     
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 15px;
     }
     
     .about-grid,
@@ -1138,21 +1162,57 @@ section {
     .developer-stats,
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 640px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
     }
     
     .hero-features {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
+    }
+    
+    .feature-number, .feature-icon {
+        font-size: 2rem;
     }
     
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
     }
     
     .highlights-grid,
@@ -1169,5 +1229,90 @@ section {
     .developer-stats,
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .about-content h3,
+    .project-highlights h3,
+    .developer-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat-card h3,
+    .timeline-growth {
+        font-size: 2.5rem;
+    }
+    
+    .btn-hero,
+    .btn-submit,
+    .btn-map {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .nav-brand .logo {
+        height: 50px;
+    }
+    
+    /* Improve touch targets for mobile */
+    .amenity-card,
+    .connectivity-card,
+    .attraction-card,
+    .plot-card,
+    .legal-card {
+        padding: 20px 15px;
+    }
+    
+    /* Better spacing on mobile */
+    .project-highlights,
+    .infrastructure-details,
+    .developer-info {
+        padding: 30px 20px;
+    }
+    
+    /* Optimize images for mobile */
+    .amenity-image {
+        height: 150px;
+    }
+    
+    .image-placeholder {
+        height: 300px;
+    }
+    
+    /* Better form on mobile */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.3rem;
     }
 }
